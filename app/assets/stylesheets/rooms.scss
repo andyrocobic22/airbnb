@@ -109,3 +109,44 @@ header{
     }
   }
 }
+.main-content{
+  width: 100%;
+  height: 100%;
+  .main-content__h2{
+    margin: 32px;
+    h2{
+      font-size: 28px;
+      font-weight: bold;
+      color: rgb(72,72,72);
+    }
+  }
+  .main-content__rooms__button{
+    position: relative;
+    background-image: url("https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg");
+    background-size: 96px 72px;
+    background-repeat: no-repeat;
+    width: 286px;
+    height: 72px;
+    margin-left: 32px;
+    background-color: #fff;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom:1px solid rgba(0,0,0,0.1);
+    border-top:1px solid rgba(0,0,0,0.1);
+    border-top-right-radius: 3px;
+    border-top-left-radius: 3px;
+    border-right: 1px solid rgba(0,0,0,0.1);
+    border-left: 1px solid rgba(0,0,0,0.1);
+    .main-content__rooms__button__link{
+      display: block;
+      width: 100%;
+      height: 100%;
+    }
+    span{
+      position: absolute;
+      top:30%;
+      left: 40%;
+    }
+  }
+
+}

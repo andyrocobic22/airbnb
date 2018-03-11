@@ -1,26 +1,48 @@
 %body
-  %header
-    .header__logo
-      = link_to image_tag("logo.png"),root_path,class: "header__logo__size"
-    .header__middle
-      .header__search
-        .header__search__size
-          .header_search__size__relative
-            %input{name: "things",placeholder: "「ソウル」などエリアを入力"}
-            = image_tag("search_log.png",)
-    .header__navi
-      %ul
-        %li
-          = link_to "ホストをはじめる",root_path,class: "header__navi__start_host header__navi_common"
-        %li
-          = link_to "ヘルプ",root_path,class: "header__navi__help header__navi_common"
-        %li
-          = link_to "アカウント作成",root_path,class: "header__navi__create_account header__navi_common"
-        %li
-          = link_to "ログイン",root_path,class: "header__navi__login header__navi_common"
+  = render 'rooms/header_rooms_index'
   .main-content
     .main-content__h2
       %h2 Airbnbで探す
-    .main-content__rooms__button
-      = link_to "宿泊先",root_path, class: "main-content__rooms__button__link"
+      .main-content__rooms__button
+        = link_to root_path, class: "main-content__rooms__button__link" do
+          %span 宿泊先
+      .main-content__h3
+        %h3 世界のお家
+        - @rooms.each do |room|
+          .main-content__h3__main-content.cf
+            .main-content__h3__main-content__rooms
+              = link_to root_path,class: "main-content__h3__main-content__room" do
+                .main-content__h3__main-content__room__image
+                  = image_tag "#{room.images}"
+                .main-content__h3__main-content__room__overview.cf
+                  .main-content__h3__main-content__room__overview__p1
+                    %span #{room.room_category}
+                    %span ・
+                    %span #{room.room_place}
+                  .main-content__h3__main-content__room__overview__room_name
+                    %span #{room.room_name}
+                  .main-content__h3__main-content__room__overview__p2
+                    %span $#{room.price}~
+                    %span /泊
+                    - if  room.cancel_free
+                      %span ・
+                      %span #{room.cancel_free}
+                  .main-content__h3__main-content__room__overview__rate.cf
+                    .main-content__h3__main-content__room__overview__rate__star-rating
+                      %input{type: "radio", name: "rating", value: "1"}
+                      %i
+                      %input{type: "radio", name: "rating", value: "2"}
+                      %i
+                      %input{type: "radio", name: "rating", value: "3"}
+                      %i
+                      %input{type: "radio", name: "rating", value: "4"}
+                      %i
+                      %input{type: "radio", name: "rating", value: "5"}
+                      %i
+                    .main-content__h3__main-content__room__overview__rate__rates
+                      %span #{room.rate}
+                    .main-content__h3__main-content__room__overview__rate__super_host
+                      - if  room.host_rank
+                        %span ・
+                        %span #{room.host_rank}
   %footer

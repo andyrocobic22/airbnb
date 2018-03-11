@@ -1,152 +1,138 @@
-header{
-  height: 80px;
-  width: 100%;
-  border-bottom:1px solid #e4e4e4;
-  background-color: #ffffff;
-  .header__logo{
-    float: left;
-    width: 82px;
-    height: 100%;
-    .header__logo__size{
-      display: block;
-      position: relative;
-      width: 100%;
-      height: 100%;
-      img{
-        position: absolute;
-        width: 34px;
-        height: 34px;
-        margin:auto;
-        top: 25%;
-        left:25%;
-      }
-    }
-  }
-  .header__middle{
-    float: left;
-    height: 100%;
-    width: 658px;
-    .header__search{
-      height: 50px;
-      width: 460px;
-      position: relative;
-      .header__search__size{
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        border: 1px solid #DBDBDB;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-        border-radius: 4px;
-        top: 25%;
-        left: 1%;
-        z-index: 5;
-        .header_search__size__relative{
-          height: 100%;
-          width: 100%;
-          position: relative;
-          input{
-            outline: 0;
-            position: absolute;
-            height: 48px;
-            width: 100%;
-            border: none;
-            background: none;
-            top: 0;
-            left: 8%;
-            color: black;
-            font-size: 20px;
-            margin-left: 15px;
-            font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","MS Gothic","ＭＳ ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif;
-            opacity: 0.7;
-          }
-          img{
-            position: absolute;
-            height: 24px;
-            width: 24px;
-            top:25%;
-            left: 3%;
-          }
-        }
-      }
-    }
-  }
-  .header__navi{
-    width: 444px;
-    height: 100%;
-    float: right;
-    margin-right: 50px;
-    ul{
-      width: 100%;
-      height: 100%;
-      margin-left: 50px;
-      li{
-        height: 100%;
-        float: left;
-        list-style: none;
-        .header__navi_common{
-          text-decoration: none;
-          box-sizing:border-box;
-          padding: 30px 8px;
-          font-size: 14px;
-          display: block;
-          color:rgb(72,72,72);
-          font-family: "ヒラギノ角ゴ Pro","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,Osaka,"ＭＳ Ｐゴシック","MS PGothic","MS Gothic","ＭＳ ゴシック","Helvetica Neue",Helvetica,Arial,sans-serif;
-          opacity: 0.7;
-        }
-        .header__navi__start_host{
-          width:144px;
-        }
-        .header__navi__help{
-          width:74px;
-        }
-        .header__navi__create_account{
-          width: 130px;
-        }
-        .header__navi__login{
-          width: 88px;
-        }
-      }
-    }
-  }
-}
 .main-content{
-  width: 100%;
+  width: calc(100% - 80px);
   height: 100%;
+  padding-right: 24px;
+  padding-left: 24px;
   .main-content__h2{
+    width: 100%;
+    height: 100%;
     margin: 32px;
     h2{
       font-size: 28px;
       font-weight: bold;
       color: rgb(72,72,72);
+      margin-bottom: 16px;
     }
-  }
-  .main-content__rooms__button{
-    position: relative;
-    background-image: url("https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg");
-    background-size: 96px 72px;
-    background-repeat: no-repeat;
-    width: 286px;
-    height: 72px;
-    margin-left: 32px;
-    background-color: #fff;
-    border-bottom-left-radius: 3px;
-    border-bottom-right-radius: 3px;
-    border-bottom:1px solid rgba(0,0,0,0.1);
-    border-top:1px solid rgba(0,0,0,0.1);
-    border-top-right-radius: 3px;
-    border-top-left-radius: 3px;
-    border-right: 1px solid rgba(0,0,0,0.1);
-    border-left: 1px solid rgba(0,0,0,0.1);
-    .main-content__rooms__button__link{
-      display: block;
+    .main-content__rooms__button{
+      position: relative;
+      background-image: url("https://a0.muscache.com/im/pictures/8b7519ec-2c82-4c09-8233-fd4d2715bbf9.jpg");
+      background-size: 96px 72px;
+      background-repeat: no-repeat;
+      width: 286px;
+      height: 72px;
+      background-color: #fff;
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px;
+      border-bottom:1px solid rgba(0,0,0,0.1);
+      border-top:1px solid rgba(0,0,0,0.1);
+      border-top-right-radius: 3px;
+      border-top-left-radius: 3px;
+      border-right: 1px solid rgba(0,0,0,0.1);
+      border-left: 1px solid rgba(0,0,0,0.1);
+      .main-content__rooms__button__link{
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+      span{
+        position: absolute;
+        top:30%;
+        left: 40%;
+        font-weight: bold;
+        color: black;
+      }
+    }
+    .main-content__h3{
       width: 100%;
       height: 100%;
-    }
-    span{
-      position: absolute;
-      top:30%;
-      left: 40%;
+      margin-top: 40px;
+      h3{
+        font-size: 28px;
+        color: #484848;
+        font-weight: 700;
+      }
+      .main-content__h3__main-content{
+        float: left;
+        padding-top:8px;
+        width:15%;
+        height: 100%;
+        padding-right: 16px;
+        .main-content__h3__main-content__rooms{
+          width: 100%;
+          .main-content__h3__main-content__room{
+            text-decoration: none;
+            width: 100%;
+            .main-content__h3__main-content__room__image{
+              img{
+                width: 100%;
+                border-radius: 3px;
+              }
+            }
+            .main-content__h3__main-content__room__overview{
+              .main-content__h3__main-content__room__overview__p1{
+                span{
+                  font-size: 12px;
+                  color: rgb(3,21,13);
+                  font-weight: 700;
+                  letter-spacing: 0.2px;
+                  list-style: 16px;
+                }
+              }
+              .main-content__h3__main-content__room__overview__room_name{
+                span{
+                  font-size: 19px;
+                  color: rgb(72,72,72);
+                  font-weight: 700;
+                  letter-spacing: 0.2px;
+                  line-height: 22px;
+                }
+              }
+              .main-content__h3__main-content__room__overview__p2{
+                span{
+                  font-size: 15px;
+                  letter-spacing: 0.2px;
+                  color: rgb(72,72,72);
+                  font-weight: 300;
+                  line-height: 18px;
+                }
+              }
+              .main-content__h3__main-content__room__overview__rate{
+                .main-content__h3__main-content__room__overview__rate__star-rating{
+                  float: left;
+                  font-size: 0;
+                  white-space: nowrap;
+                  display: inline-block;
+                  overflow: hidden;
+                  position: relative;
+                  background:url()
+                }
+                .main-content__h3__main-content__room__overview__rate__rates{
+                  float:left;
+                  span{
+                    float: left;
+                    letter-spacing: 0.2px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgb(72,72,72);
+                    line-height: 16px;
+                  }
+                }
+                .main-content__h3__main-content__room__overview__rate__super_host{
+                  float: left;
+                  span{
+                    float: left;
+                    letter-spacing: 0.2px;
+                    font-size: 12px;
+                    font-weight: 400;
+                    color: rgb(72,72,72);
+                    line-height: 16px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
     }
   }
-
 }

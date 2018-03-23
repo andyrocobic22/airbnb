@@ -1,11 +1,18 @@
 @import './rooms.scss';
 @import './reset.scss';
 @import './rooms_header.scss';
+@import './fontawesome';
 
-body {height: 100%;}
+
+body {
+  height: 100%;
+  overflow-x:hidden;
+}
 
 .cf:after{
 content: "";
 display: block;
 clear: both;
 }
+
+

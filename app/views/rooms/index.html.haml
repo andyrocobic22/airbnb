@@ -5,12 +5,12 @@
     .main-content__rooms__button
       = link_to root_path, class: "main-content__rooms__button__link" do
         %span 宿泊先
-    .main-content__h3.cf
+    .main-content__h3
       %h3 世界のお家
       - @rooms.each do |room|
-        .main-content__h3__main-content.cf
+        .main-content__h3__main-content
           .main-content__h3__main-content__rooms
-            = link_to root_path,class: "main-content__h3__main-content__room" do
+            = link_to room_path(room),class: "main-content__h3__main-content__room" do
               .main-content__h3__main-content__room__image
                 = image_tag "#{room.images}"
               .main-content__h3__main-content__room__overview.cf
@@ -47,51 +47,75 @@
 %footer
   .footer-content
     .footer-content__size
-      .footer_navi_main
-        %section
-          %span.footer_navi_main__theme
-            Airbnb
-          %span
-            採用情報
-          %span
-            プレス
-          %span
-            ポリシー
-          %span
-            ヘルプ
-          %span
-            ダイバーシティ&ビロンギング
-        %section
-          %span.footer_navi_main__theme
-            スタッフのおすすめ
-          %span
-            信頼＆安全
-          %span
-            旅行クーポン
-          %span
-            Airbnb Citizen
-          %span
-            出張
-          %span
-            ガイドブック
-          %span
-            Airbnbmag
-        %section
-          %span.footer_navi_main__theme
-            ホスティング
-          %span
-            おもてなしの心
-          %span
-            ホストの責任
-          %span
-            コミュニティセンター
-        %section
-          .footer_navi_main__logos
-
-          %span
-            利用規約
-          %span
-            プライバシー
-          %span
-            サイトマップ
+      .footer-content__size__auto
+        .footer-content__size__auto__border_bottom
+          .footer_navi_main.cf
+            %section.navi-content
+              %h4.footer_navi_main__theme
+                Airbnb
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  採用情報
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  プレス
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ポリシー
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ヘルプ
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ダイバーシティ&ビロンギング
+            %section.navi-content.navi-content-left
+              %h4.footer_navi_main__theme
+                スタッフのおすすめ
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  信頼＆安全
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  旅行クーポン
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  Airbnb Citizen
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  出張
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ガイドブック
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  Airbnbmag
+            %section.navi-content.navi-content-left
+              %h4.footer_navi_main__theme
+                ホスティング
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  おもてなしの心
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ホストの責任
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  コミュニティセンター
+            %section.navi-content.navi-content-left
+              .footer_navi_main__logos
+                .footer_navi_main__logos__facebook
+                  = link_to root_path
+                .footer_navi_main__logos__twitter
+                  = link_to root_path
+                .footer_navi_main__logos__instagram
+                  = link_to root_path
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  利用規約
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  プライバシー
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  サイトマップ
       .footer_navi_sub

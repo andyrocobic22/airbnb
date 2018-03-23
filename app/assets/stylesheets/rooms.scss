@@ -3,6 +3,7 @@
   width: 100%;
   padding-right: 24px;
   padding-left: 24px;
+  box-sizing:border-box;
   .main-content__h2{
     width: 100%;
     height: 100%;
@@ -39,7 +40,7 @@
         top:30%;
         left: 40%;
         font-weight: bold;
-        color: black;
+        color: rgb(72,72,72);
       }
     }
     .main-content__h3{
@@ -52,13 +53,15 @@
         font-weight: 700;
       }
       .main-content__h3__main-content{
-        float: left;
+        display: inline-block;
+        vertical-align: top;
         width:23%;
         height: 100%;
         padding-top: 8px;
         padding-bottom: 12px;
         padding-right: 16px;
         .main-content__h3__main-content__rooms{
+
           width: 100%;
           height: 100%;
           .main-content__h3__main-content__room{
@@ -140,10 +143,56 @@
           }
         }
       }
+      // .main-content__h3__main-content:nth-child(5n){
+      //   clear: both;
+      // }
     }
   }
 }
 footer{
   width: 100%;
   height: 333px;
+  .footer-content{
+    width: 100%;
+    height: 100%;
+    border-top: 1px solid #dbdbdb;
+    .footer-content__size{
+      width: 1028px;
+      height: 100%;
+      margin: 0 auto;
+      .footer-content__size__auto{
+        padding: 48px 24px;
+        margin: 0 auto;
+        .footer-content__size__auto__border_bottom{
+          padding-bottom:25px;
+          border-bottom: 1px solid #dbdbdb;
+          .navi-content{
+            font-size: 15px;
+            float: left;
+            width: 16.66666%;
+            .footer_navi_main__theme{
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: rgb(72,72,72);
+            letter-spacing: 0.2;
+            }
+            .footer_navi_main_list{
+              margin-bottom: 4px;
+              text-decoration: none;
+              span{
+              display: block;
+              font-size: 15px;
+              color: rgb(118,118,118);
+              font-weight: 400;
+              letter-spacing: 0.2;
+              }
+            }
+          }
+          .navi-content-left{
+            margin-left: 8.333333332%;
+          }
+        }
+      }
+    }
+  }
 }

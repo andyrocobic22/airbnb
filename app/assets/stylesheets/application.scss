@@ -1,8 +1,13 @@
 @import './rooms.scss';
 @import './reset.scss';
-@import './rooms_header.scss';
-@import './fontawesome';
+@import './common/rooms_header.scss';
+@import "font-awesome";
+@import './common/rooms_footer.scss';
+@import './rooms_show.scss';
 
+/*
+ *= require font-awesome
+ */
 
 body {
   height: 100%;
@@ -14,5 +19,6 @@ content: "";
 display: block;
 clear: both;
 }
+
 
 

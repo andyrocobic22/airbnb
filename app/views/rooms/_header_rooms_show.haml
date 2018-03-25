@@ -1,13 +1,12 @@
-%header.cf.header__index
+%header.cf
   .header__logo
     = link_to image_tag("logo.png"),root_path,class: "header__logo__size"
   .header__middle
     .header__search
-      .header__search__size.header__search__index
+      .header__search__size.header__search__show
         .header_search__size__relative
-          %input{name: "things",placeholder: "「ソウル」などエリアを入力",class: "header_search__size__relative__index",id: "header_search" }
-          = image_tag("search_log.png",class: "header_search__size__relative__index__img")
-        .header_search__click__apeearance
+          %input{name: "things",placeholder: "探す",class: "header_search__size__relative__show"}
+          = image_tag("search_log.png", class: "header_search__size__relative__show__img")
   .header__navi
     %ul.cf
       %li

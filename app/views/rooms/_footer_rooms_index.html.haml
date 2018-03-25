@@ -1,0 +1,82 @@
+%footer
+  .footer-content
+    .footer-content__size
+      .footer-content__size__auto
+        .footer-content__size__auto__border_bottom
+          .footer_navi_main.cf
+            %section.navi-content
+              %h4.footer_navi_main__theme
+                Airbnb
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  採用情報
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  プレス
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ポリシー
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ヘルプ
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ダイバーシティ&ビロンギング
+            %section.navi-content.navi-content-left
+              %h4.footer_navi_main__theme
+                スタッフのおすすめ
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  信頼＆安全
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  旅行クーポン
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  Airbnb Citizen
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  出張
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ガイドブック
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  Airbnbmag
+            %section.navi-content.navi-content-left
+              %h4.footer_navi_main__theme
+                ホスティング
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  おもてなしの心
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  ホストの責任
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  コミュニティセンター
+            %section.navi-content.navi-content-left
+              .footer_navi_main__logos.cf
+                .footer_navi_main__logos__sns
+                  = link_to root_path do
+                    %i.fa.fab.fa-facebook{"aria-hidden" => "true"}
+                .footer_navi_main__logos__sns
+                  = link_to root_path do
+                    %i.fa.fab.fa-twitter{"aria-hidden" => "true"}
+                .footer_navi_main__logos__sns
+                  = link_to root_path do
+                    %i.fa.fab.fa-instagram{"aria-hidden" => "true"}
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  利用規約
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  プライバシー
+              = link_to root_path, class: "footer_navi_main_list" do
+                %span
+                  サイトマップ
+      .footer_navi_sub
+        .footer_navi_sub__size.cf
+          = link_to image_tag("logo_footer.png"),root_path,class: "footer_navi_sub__logo"
+          .footer_navi_sub__trademark
+            %span &copy; Airbnb, Inc.

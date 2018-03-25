@@ -1,1 +1,18 @@
-= render 'rooms/header_rooms_index'
+= render 'rooms/header_rooms_show'
+.show-main-content
+  .show-main-content__room__image_area{style: "background-image:url(#{@room.images})"}
+    .show-main-content__room__image_area__buttons
+      .show-main-content__room__image_area__share.show-main-content__room__image_area__button
+        = link_to root_path, class: "show-main-content__room__image_area__share__button" do
+          %i.fa.fa-share-square-o{"aria-hidden" => "true"}
+          %span シェアする
+      .show-main-content__room__image_area__reserve.show-main-content__room__image_area__button
+        = link_to root_path, class: "show-main-content__room__image_area__reserve__button" do
+          %i.fa.fa-heart-o{"aria-hidden" => "true"}
+          %span 保存
+    .show-main-content__room__image_area__buttons__picture
+      .show-main-content__room__image_area__picture.show-main-content__room__image_area__button
+        = link_to root_path, class: "show-main-content__room__image_area__picture__button" do
+          %span 写真を表示
+  .show-main-content__room__detail_area
+= render 'rooms/footer_rooms_index'

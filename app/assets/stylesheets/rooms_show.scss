@@ -1,0 +1,88 @@
+.show-main-content{
+  width: 100%;
+  height: 100%;
+  .show-main-content__room__image_area{
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+    .show-main-content__room__image_area__buttons{
+      position: absolute;
+      top: 24px;
+      right: 24px;
+      .show-main-content__room__image_area__share{
+        margin-right: 15px;
+        .show-main-content__room__image_area__share__button{
+          display: block;
+          padding: 8px 16px;
+          text-decoration: none;
+          color: rgb(72,72,72);
+          font-weight: 400;
+          font-family:Circular;
+          .fa{
+            margin-right: 10px;
+            font-size: 15px;
+            color: rgb(72,72,72);
+            font-weight: 400;
+          }
+        }
+      }
+      .show-main-content__room__image_area__reserve{
+        .show-main-content__room__image_area__reserve__button{
+          display: block;
+          padding: 8px 16px;
+          text-decoration: none;
+          color: rgb(72,72,72);
+          font-weight: 400;
+          font-family:Circular;
+          .fa{
+            margin-right: 10px;
+            font-size: 15px;
+            color: rgb(72,72,72);
+            font-weight: 400;
+          }
+        }
+      }
+      .show-main-content__room__image_area__button{
+        background-color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        color: rgb(72,72,72);
+        border-radius:4px;
+        box-shadow: 0 1px 1px 1px ,rgba(0,0,0,0.14);
+      }
+    }
+    .show-main-content__room__image_area__buttons__picture{
+      position: absolute;
+      bottom: 20px;
+      left: 20px;
+      .show-main-content__room__image_area__picture{
+        margin-right: 15px;
+        .show-main-content__room__image_area__picture__button{
+          display: block;
+          padding: 8px 16px;
+          text-decoration: none;
+          color: rgb(72,72,72);
+          font-weight: 400;
+          font-family:Circular;
+          .fa{
+            margin-right: 10px;
+            font-size: 15px;
+            color: rgb(72,72,72);
+            font-weight: 400;
+          }
+        }
+      }
+      .show-main-content__room__image_area__button{
+        background-color: #fff;
+        display: inline-block;
+        font-size: 15px;
+        color: rgb(72,72,72);
+        border-radius:4px;
+        box-shadow: 0 1px 1px 1px ,rgba(0,0,0,0.14);
+      }
+    }
+  }
+}
+

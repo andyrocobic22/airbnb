@@ -1,0 +1,20 @@
+%header.cf.header__index
+  .header__logo
+    = link_to image_tag("logo.png"),root_path,class: "header__logo__size"
+  .header__middle
+    .header__search
+      .header__search__size.header__search__index
+        .header_search__size__relative
+          %input{name: "things",placeholder: "「ソウル」などエリアを入力",class: "header_search__size__relative__index",id: "header_search" }
+          = image_tag("search_log.png",class: "header_search__size__relative__index__img")
+        .header_search__click__apeearance
+  .header__navi
+    %ul.cf
+      %li
+        = link_to "ホストをはじめる",root_path,class: "header__navi__start_host header__navi_common"
+      %li
+        = link_to "ヘルプ",root_path,class: "header__navi__help header__navi_common"
+      %li
+        = link_to "アカウント作成",root_path,class: "header__navi__create_account header__navi_common"
+      %li
+        = link_to "ログイン",root_path,class: "header__navi__login header__navi_common"

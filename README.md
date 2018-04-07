@@ -24,7 +24,7 @@
 |limit|integer||
 |start|integer||
 |end|integer||
-|charg-setting|integer||
+|charge-setting|integer||
 |min-charge|integer||
 |basic-charge|integer||
 |max-charge|integer||
